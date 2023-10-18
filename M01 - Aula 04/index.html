@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            background-image: url('./imagens/banner-600.jpg');
+            opacity: 90%;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produto {
+            margin: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .produto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .produto h2 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .produto p {
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cardápio Digital</h1>
+        <p>Confira nossos deliciosos pratos</p>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Cardápio</a>
+        <a href="#">Contato</a>
+    </nav>
+    <section>
+        <div class="produto">
+            <img src="./imagens/café expresso-menor.jpg" alt="Café Americano">
+            <h2>Café Americano</h2>
+            <p>Expresso suavizado com água quente</p>
+        </div>
+        <div class="produto">
+            <img src="./imagens/capuccino-menor.jpg" alt="Capuccino" width="44%">
+            <h2>Capuccino</h2>
+            <p>Expresso com leite cremoso</p>
+        </div>
+        <!-- Adicione mais produtos aqui -->
+    </section>
+    <section>
+        <h2>Tabela de Preços</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Café Americano</td>
+                <td>R$10.99</td>
+            </tr>
+            <tr>
+                <td>Capuccino</td>
+                <td>R$12.99</td>
+            </tr>
+            <!-- Adicione mais linhas da tabela aqui -->
+        </table>
+    </section>
+    <section>
+        <h2>Faça seu Pedido</h2>
+        <div>
+            <form class="container">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="pedido">Pedido:</label>
+                <textarea id="pedido" name="pedido" rows="4" required></textarea>
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
